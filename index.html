@@ -14,6 +14,9 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Unbounded:wght@500;700&amp;display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -24,16 +27,20 @@
         <a class="logo" href="#top">Virtez VPN</a>
         <nav class="nav">
           <a href="#advantages">Преимущества</a>
+          <a href="#setup">Подключение</a>
+          <a href="#servers">Серверы</a>
           <a href="#pricing">Тарифы</a>
-          <a href="#faq">FAQ</a>
+          <a href="#trust">Безопасность</a>
+          <a href="#payments">Оплата</a>
         </nav>
         <a
           class="btn btn-sm btn-primary"
-          href="https://t.me/virtez_vpn_bot"
+          href="https://t.me/virtezvpn_bot?start=landing"
           target="_blank"
           rel="noopener noreferrer"
+          data-ab-cta-top
         >
-          3 дня бесплатно
+          Попробовать бесплатно
         </a>
       </div>
     </header>
@@ -43,7 +50,10 @@
         <div class="container hero-grid">
           <div class="hero-copy reveal">
             <p class="eyebrow">Премиальный VPN-сервис</p>
-            <h1>Стабильный интернет без компромиссов</h1>
+            <h1 data-ab-headline>Подключи VPN за 1 минуту</h1>
+            <p class="hero-offer" data-ab-offer>
+              3 дня бесплатно • от 299 ₽ • скорость до 10 Гбит/с
+            </p>
             <p class="hero-lead">
               Virtez VPN объединяет скорость до 10 Гбит/с, минимальный пинг и
               надежную защиту данных. Активируйте пробный период на 3 дня и
@@ -52,11 +62,12 @@
             <div class="cta-row">
               <a
                 class="btn btn-primary"
-                href="https://t.me/virtez_vpn_bot"
+                href="https://t.me/virtezvpn_bot?start=landing"
                 target="_blank"
                 rel="noopener noreferrer"
+                data-ab-cta-primary
               >
-                Активировать 3 дня бесплатно
+                Активировать пробный период
               </a>
               <a class="btn btn-ghost" href="#pricing">Смотреть тарифы</a>
             </div>
@@ -78,10 +89,8 @@
               <span class="caption">Бесплатный тест перед оплатой</span>
             </div>
             <div class="panel-stat">
-              <span class="value">299 ₽</span>
-              <span class="caption"
-                >Стартовый тариф за месяц / 3 устройства</span
-              >
+              <span class="value">от 299 ₽</span>
+              <span class="caption">Стоимость подписки</span>
             </div>
           </aside>
         </div>
@@ -129,21 +138,125 @@
         </div>
       </section>
 
+      <section class="section setup" id="setup">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Подключение</p>
+            <h2>Подключи впн всего за минуту</h2>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card reveal">
+              <span class="step-number">01</span>
+              <h3>Зайди в бота</h3>
+              <p>Открой Telegram-бот Virtez VPN и нажми «Старт».</p>
+            </article>
+            <article class="step-card reveal">
+              <span class="step-number">02</span>
+              <h3>Активируй</h3>
+              <p>Выбери пробный период и получи доступ одним нажатием.</p>
+            </article>
+            <article class="step-card reveal">
+              <span class="step-number">03</span>
+              <h3>Подключи</h3>
+              <p>Подключи устройство по инструкции в боте и выходи в сеть.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section servers" id="servers">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Сеть серверов</p>
+            <h2>Стабильный низкий пинг 30-40 мс и высокий uptime</h2>
+          </div>
+
+          <div class="servers-grid">
+            <article class="server-card reveal">
+              <h3>Германия</h3>
+              <div class="server-metrics">
+                <div class="server-metric">
+                  <span class="metric-label">Пинг</span>
+                  <span class="metric-value ping-value" data-ping-min="30" data-ping-max="40"
+                    >34 мс</span
+                  >
+                </div>
+                <div class="server-metric">
+                  <span class="metric-label">Uptime</span>
+                  <span class="metric-value uptime-value">99.98%</span>
+                </div>
+              </div>
+            </article>
+            <article class="server-card reveal">
+              <h3>Нидерланды</h3>
+              <div class="server-metrics">
+                <div class="server-metric">
+                  <span class="metric-label">Пинг</span>
+                  <span class="metric-value ping-value" data-ping-min="30" data-ping-max="40"
+                    >36 мс</span
+                  >
+                </div>
+                <div class="server-metric">
+                  <span class="metric-label">Uptime</span>
+                  <span class="metric-value uptime-value">99.99%</span>
+                </div>
+              </div>
+            </article>
+            <article class="server-card reveal">
+              <h3>Финляндия</h3>
+              <div class="server-metrics">
+                <div class="server-metric">
+                  <span class="metric-label">Пинг</span>
+                  <span class="metric-value ping-value" data-ping-min="30" data-ping-max="40"
+                    >33 мс</span
+                  >
+                </div>
+                <div class="server-metric">
+                  <span class="metric-label">Uptime</span>
+                  <span class="metric-value uptime-value">99.97%</span>
+                </div>
+              </div>
+            </article>
+            <article class="server-card reveal">
+              <h3>Эстония</h3>
+              <div class="server-metrics">
+                <div class="server-metric">
+                  <span class="metric-label">Пинг</span>
+                  <span class="metric-value ping-value" data-ping-min="30" data-ping-max="40"
+                    >35 мс</span
+                  >
+                </div>
+                <div class="server-metric">
+                  <span class="metric-label">Uptime</span>
+                  <span class="metric-value uptime-value">99.98%</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="pricing">
         <div class="container">
           <div class="section-head reveal">
             <p class="eyebrow">Тарифы</p>
-            <h2>Выберите удобный период после бесплатного пробного периода</h2>
+            <h2>Выберите удобный тариф</h2>
           </div>
 
           <div class="pricing-grid">
             <article class="price-card reveal featured">
               <p class="plan">1 месяц</p>
               <p class="price">299 ₽</p>
-              <p class="plan-note">до 3 устройств</p>
+              <p class="price-save">Базовый тариф</p>
+              <ul class="plan-features">
+                <li>Включено 3 устройства</li>
+                <li>Безлимитный трафик</li>
+                <li>Все серверы</li>
+              </ul>
               <a
                 class="btn btn-primary"
-                href="https://t.me/virtez_vpn_bot"
+                href="https://t.me/virtezvpn_bot?start=landing"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Оформить</a
@@ -152,22 +265,33 @@
             <article class="price-card reveal">
               <p class="plan">3 месяца</p>
               <p class="price">799 ₽</p>
-              <p class="plan-note">выгоднее помесячной оплаты</p>
+              <p class="price-save">Экономия 98 ₽ (11%)</p>
+              <ul class="plan-features">
+                <li>Выгоднее помесячной оплаты</li>
+                <li>Безлимитный трафик</li>
+                <li>Все серверы</li>
+              </ul>
               <a
                 class="btn btn-ghost"
-                href="https://t.me/virtez_vpn_bot"
+                href="https://t.me/virtezvpn_bot?start=landing"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Оформить</a
               >
             </article>
-            <article class="price-card reveal">
+            <article class="price-card reveal popular-plan">
+              <span class="plan-badge">Популярный</span>
               <p class="plan">6 месяцев</p>
               <p class="price">1499 ₽</p>
-              <p class="plan-note">оптимально для постоянного использования</p>
+              <p class="price-save">Экономия 295 ₽ (16%)</p>
+              <ul class="plan-features">
+                <li>Оптимально для постоянного использования</li>
+                <li>Безлимитный трафик</li>
+                <li>Все серверы</li>
+              </ul>
               <a
                 class="btn btn-ghost"
-                href="https://t.me/virtez_vpn_bot"
+                href="https://t.me/virtezvpn_bot?start=landing"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Оформить</a
@@ -176,47 +300,97 @@
             <article class="price-card reveal">
               <p class="plan">12 месяцев</p>
               <p class="price">2699 ₽</p>
-              <p class="plan-note">максимальная выгода на год</p>
+              <p class="price-save">Экономия 889 ₽ (25%)</p>
+              <ul class="plan-features">
+                <li>Максимальная выгода на год</li>
+                <li>Безлимитный трафик</li>
+                <li>Все серверы</li>
+              </ul>
               <a
                 class="btn btn-ghost"
-                href="https://t.me/virtez_vpn_bot"
+                href="https://t.me/virtezvpn_bot?start=landing"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Оформить</a
               >
             </article>
           </div>
+          <p class="pricing-addon reveal">
+            Нужно больше подключений? Дополнительные устройства можно докупать
+            по 50 ₽ за каждое.
+          </p>
         </div>
       </section>
 
-      <section class="section faq" id="faq">
+      <section class="section trust" id="trust">
         <div class="container">
           <div class="section-head reveal">
-            <p class="eyebrow">FAQ</p>
-            <h2>Коротко о подключении и оплате</h2>
+            <p class="eyebrow">Доверие и защита</p>
+            <h2>Безопасность, которую можно проверить в цифрах</h2>
           </div>
-          <div class="faq-list">
-            <details class="faq-item reveal">
-              <summary>Как активировать 3 дня бесплатно?</summary>
+          <div class="trust-grid">
+            <article class="trust-card reveal">
+              <h3>No-logs</h3>
+              <p>История посещений и пользовательский трафик не сохраняются.</p>
+            </article>
+            <article class="trust-card reveal">
+              <h3>Надежное шифрование</h3>
+              <p>Трафик защищен современными алгоритмами шифрования.</p>
+            </article>
+            <article class="trust-card reveal">
+              <h3>Современные протоколы</h3>
+              <p>VLESS для стабильной и быстрой работы.</p>
+            </article>
+            <article class="trust-card reveal">
+              <h3>Поддержка до 5 минут</h3>
+              <p>Оперативные ответы в Telegram без долгого ожидания.</p>
+            </article>
+          </div>
+          <div class="section-inline-cta reveal">
+            <p>Запустите безопасное подключение прямо сейчас.</p>
+            <a
+              class="btn btn-primary"
+              href="https://t.me/virtezvpn_bot?start=landing"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-ab-cta-secondary
+              >Открыть бота и подключиться</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section payments" id="payments">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Способы оплаты</p>
+            <h2>Оплачивайте подписку удобным для вас способом</h2>
+          </div>
+          <div class="payments-grid">
+            <article class="payment-card reveal">
+              <h3>Карты</h3>
               <p>
-                Нажмите кнопку «Активировать 3 дня бесплатно», откроется
-                Telegram-бот с быстрым запуском пробного периода.
+                Оплата банковскими картами с быстрым подтверждением и запуском.
               </p>
-            </details>
-            <details class="faq-item reveal">
-              <summary>На сколько устройств действует подписка?</summary>
+            </article>
+            <article class="payment-card reveal">
+              <h3>СБП</h3>
               <p>
-                Базовый месячный тариф рассчитан на 3 устройства. Детали по
-                расширению можно уточнить в Telegram-боте.
+                Моментальная оплата через СБП напрямую из мобильного банка.
               </p>
-            </details>
-            <details class="faq-item reveal">
-              <summary>Подходит ли сервис для видео, звонков и игр?</summary>
+            </article>
+            <article class="payment-card reveal">
+              <h3>Криптовалюта</h3>
               <p>
-                Да, сервис ориентирован на высокую скорость и низкую задержку,
-                поэтому подходит для повседневных и рабочих задач.
+                Все популярные сети и токены
               </p>
-            </details>
+            </article>
+            <article class="payment-card reveal">
+              <h3>Telegram Stars</h3>
+              <p>
+                Оплачивайте подписку через Telegram Stars прямо внутри бота
+              </p>
+            </article>
           </div>
         </div>
       </section>
@@ -224,12 +398,13 @@
       <section class="section cta">
         <div class="container cta-box reveal">
           <p class="eyebrow">Готовы проверить скорость?</p>
-          <h2>Запустите пробный период Virtez VPN на 3 дня</h2>
+          <h2>Активируйте пробный период Virtez VPN на 3 дня</h2>
           <a
             class="btn btn-primary"
-            href="https://t.me/virtez_vpn_bot"
+            href="https://t.me/virtezvpn_bot?start=landing"
             target="_blank"
             rel="noopener noreferrer"
+            data-ab-cta-footer
           >
             Перейти в Telegram-бот
           </a>
@@ -241,13 +416,23 @@
       <div class="container footer-inner">
         <span>© <span id="year"></span> Virtez VPN</span>
         <a
-          href="https://t.me/virtez_vpn_bot"
+          href="https://t.me/virtezvpn_bot?start=landing"
           target="_blank"
           rel="noopener noreferrer"
           >Telegram-бот</a
         >
       </div>
     </footer>
+
+    <a
+      class="mobile-sticky-cta btn btn-primary"
+      href="https://t.me/virtezvpn_bot?start=landing"
+      target="_blank"
+      rel="noopener noreferrer"
+      data-ab-cta-sticky
+    >
+      Открыть бота
+    </a>
 
     <script type="module" src="/src/main.js"></script>
   </body>
